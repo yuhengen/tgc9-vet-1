@@ -27,6 +27,14 @@
         @endeach
       </select>
     </div>
+     <div>
+    <label class="form-label">Vets</label>
+    <select name="vets" multiple class="form-control">
+      @each(v in vets)
+      <option value='{{v.id}}'>{{v.first_name}} {{v.last_name}}</option>
+      @endeach
+    </select>
+  </div>
     <input type="submit" class="btn btn-primary mt-3"/>
   </form>
 @endsection

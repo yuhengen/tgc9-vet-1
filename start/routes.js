@@ -22,3 +22,6 @@ Route.get('/owners', 'OwnerController.index')
 
 Route.get('/pets/create', 'PetController.create')
 Route.post('/pets/create', 'PetController.processCreate')
+
+Route.get('/vets/create', 'VetController.create')
+Route.post('/vets/create', 'VetController.processCreate')
