@@ -11,3 +11,5 @@ vscode:
     - esbenp.prettier-vscode@5.7.1:4Zx39KyQMoIz7x94PSmDmQ==
     - kevinglasson.cornflakes-linter@0.5.1:KAaMshgHOKan8eojXQ53OQ==
 
+
+    - cweijan.vscode-mysql-client2@2.8.7:ZcsJWdWH6JqLB6jm7olSsg==
