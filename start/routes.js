@@ -17,3 +17,8 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+
+Route.get('/owners', 'OwnerController.index')
+
+Route.get('/pets/create', 'PetController.create')
+Route.post('/pets/create', 'PetController.processCreate')

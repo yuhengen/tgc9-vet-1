@@ -1,0 +1,32 @@
+@layout('base')
+
+@section('content')
+  <form method="POST">
+    {{csrfField()}}
+    <div>
+      <label class="form-label">Pet Name</label>
+      <input type="text" name="name" class="form-control"/>
+    </div>
+    <div>
+      <label class="form-label">Age</label>
+      <input type="text" name="age" class="form-control"/>
+    </div>
+    <div>
+      <label class="form-label">Breed</label>
+      <select name='breed' class="form-control">
+        @each(b in breeds)
+       <option value="{{b.id}}">{{b.name}}</option>
+        @endeach
+      </select>
+    </div>
+    <div>
+      <label class="form-label">Owner</label>
+      <select name='owner' class="form-control">
+        @each(o in owners)
+       <option value="{{o.id}}">{{o.first_name}} {{o.last_name}}</option>
+        @endeach
+      </select>
+    </div>
+    <input type="submit" class="btn btn-primary mt-3"/>
+  </form>
+@endsection
